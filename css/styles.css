@@ -188,6 +188,17 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 @media (min-width: 1400px) {
+  body {
+    font-size: 2vw;
+  }
+
+  .big-heading {
+    font-size: 8vw;
+  }
+
+  .section-heading {
+    font-size: 4vw;
+  }
 
   .share-div {
     height: 600px;
@@ -195,7 +206,6 @@ h1, h2, h3, h4, h5, h6 {
   }
 
   .item-abs {
-    top: 100px;
     left: 100px;
   }
 
@@ -226,6 +236,7 @@ h1, h2, h3, h4, h5, h6 {
   .color-div {
     text-align: center;
     align-items: center;
+    padding: 0;
   }
 
   .share-div-2 {
@@ -273,5 +284,9 @@ h1, h2, h3, h4, h5, h6 {
 
   .container-fluid{
     padding: 7% 10%;
+  }
+
+  .section-heading {
+    font-size: 2.5rem;
   }
 }
