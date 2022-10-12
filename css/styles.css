@@ -253,7 +253,17 @@ h1, h2, h3, h4, h5, h6 {
 
 }
 
+@media (min-width: 768px) {
+  .two-line {
+    display: none;
+  }
+}
+
 @media (max-width: 767px) {
+  .one-line {
+    display: none;
+  }
+
   .share-div-2 {
     height: 300px;
   }
