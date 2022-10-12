@@ -235,6 +235,10 @@ h1, h2, h3, h4, h5, h6 {
       ), url("../images/share-img.png");
   }
 
+  .container-fluid{
+    padding: 7% 15%;
+  }
+
 }
 
 @media (min-width: 992px) {
@@ -252,5 +256,9 @@ h1, h2, h3, h4, h5, h6 {
 @media (max-width: 767px) {
   .share-div-2 {
     height: 300px;
+  }
+
+  .container-fluid{
+    padding: 7% 10%;
   }
 }
