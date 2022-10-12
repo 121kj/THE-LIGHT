@@ -174,16 +174,16 @@ h1, h2, h3, h4, h5, h6 {
   border-bottom: solid 1px;
 }
 
-@import url("https://use.fontawesome.com/releases/v5.15.0/css/all.css");
+@import url("https://use.fontawesome.com/releases/v6.2.0/css/all.css");
 .accordion-button:not(.collapsed)::after {
-  content: "\f068";
-  font-family: "Font Awesome 5 Free";
+  content: "\f146";
+  font-family: "Font Awesome 6 Free";
   background-image: none;
 }
 
 .accordion-button.collapsed::after {
-  content: "\f067";
-  font-family: "Font Awesome 5 Free";
+  content: "\f0fe";
+  font-family: "Font Awesome 6 Free";
   background-image: none;
 }
 
