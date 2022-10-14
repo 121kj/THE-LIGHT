@@ -19,10 +19,10 @@ $(document).ready(function(){
 				minutes = Math.floor(seconds / 60);
 				seconds -= minutes * 60;
 				//
-				days == 1 ? thisEl.find(".timeRefDays").text("Days") : thisEl.find(".timeRefDays").text("Days");
-				hours == 1 ? thisEl.find(".timeRefHours").text("Hours") : thisEl.find(".timeRefHours").text("Hours");
-				minutes == 1 ? thisEl.find(".timeRefMinutes").text("Minutes") : thisEl.find(".timeRefMinutes").text("Minutes");
-				seconds == 1 ? thisEl.find(".timeRefSeconds").text("Seconds") : thisEl.find(".timeRefSeconds").text("Seconds");
+				days == 1 ? thisEl.find(".timeRefDays").text("DAYS") : thisEl.find(".timeRefDays").text("DAYS");
+				hours == 1 ? thisEl.find(".timeRefHours").text("HOURS") : thisEl.find(".timeRefHours").text("HOURS");
+				minutes == 1 ? thisEl.find(".timeRefMinutes").text("MINUTES") : thisEl.find(".timeRefMinutes").text("MINUTES");
+				seconds == 1 ? thisEl.find(".timeRefSeconds").text("SECONDS") : thisEl.find(".timeRefSeconds").text("SECONDS");
 				//
 				if(r["format"] == "on"){
 					days = String(days).length >= 2 ? days : "0" + days;
