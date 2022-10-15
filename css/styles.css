@@ -6,7 +6,7 @@ body {
   text-align: center;
   background-color: #000;
   color: #fff;
-  /* font-size: 1.5rem; */
+  font-size: 20px;
   transition: background-color 0.5s ease;
 }
 
@@ -25,12 +25,16 @@ body {
 /* Headings */
 
 .big-heading {
+  font-family: 'Pretendard';
+  font-weight: 600;
   font-size: 4rem;
   line-height: 1.5;
   color: #54BFC8
 }
 
 .section-heading {
+  font-family: 'Pretendard';
+  font-weight: 600;
   font-size: 3rem;
   line-height: 1.5;
 }
@@ -43,7 +47,7 @@ body {
 
 .container-fluid{
   padding: 12% 18%;
-  max-width: 1920px;
+  max-width: 1728px;
 }
 
 /* Navigation Bar */
@@ -87,18 +91,21 @@ body {
 
 /* Team Section */
 
+.item-team {
+  font-size: 25px;
+}
+
 .team-img {
   width: 99%;
   height: auto;
   border-radius: 17px;
-  margin-bottom: 25px;
 }
 
 .team-inst {
   color: #fff;
   position: absolute;
-  bottom: 100px;
-  right: 2vw;
+  bottom: 25px;
+  right: 25px;
 }
 
 .team-inst:hover {
@@ -107,6 +114,7 @@ body {
 
 .div-rel {
   position: relative;
+  margin-bottom: 25px;
 }
 
 /* Register Section */
@@ -129,7 +137,19 @@ body {
 }
 
 .item-CD {
-  padding: 0 10px 50px;
+  padding: 0 10px;
+  margin-bottom: 50px;
+  background: rgba(0, 0, 0, 0.3)
+}
+
+.left-CD {
+  border-top-left-radius: 17px;
+  border-bottom-left-radius: 17px;
+}
+
+.right-CD {
+  border-top-right-radius: 17px;
+  border-bottom-right-radius: 17px;
 }
 
 .numbers {
@@ -228,7 +248,7 @@ td:last-child {
 
 #foot .container-fluid {
   padding: 2% 18%;
-  max-width: 1920px;
+  max-width: 1728px;
 }
 
 .explain {
