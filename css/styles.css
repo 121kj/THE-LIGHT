@@ -6,7 +6,7 @@ body {
   text-align: center;
   background-color: #000;
   color: #fff;
-  font-size: 1.5rem;
+  /* font-size: 1.5rem; */
   transition: background-color 0.5s ease;
 }
 
@@ -25,13 +25,13 @@ body {
 /* Headings */
 
 .big-heading {
-  font-size: 4.5rem;
+  font-size: 4rem;
   line-height: 1.5;
   color: #54BFC8
 }
 
 .section-heading {
-  font-size: 3.5rem;
+  font-size: 3rem;
   line-height: 1.5;
 }
 
@@ -133,7 +133,7 @@ body {
 }
 
 .numbers {
-  font-size: 3.5rem;
+  font-size: 3rem;
 }
 
 .strings {
@@ -187,9 +187,9 @@ td:last-child {
   background: #1A1F27
 }
 
-.accordion-button {
+/* .accordion-button {
   font-size: 1.3rem;
-}
+} */
 
 .accordion-button.collapsed {
   color: #fff;
@@ -220,7 +220,7 @@ td:last-child {
 }
 
 .accordion-body {
-  font-size: 1.2rem;
+  /* font-size: 1.2rem; */
   text-align: left;
 }
 
