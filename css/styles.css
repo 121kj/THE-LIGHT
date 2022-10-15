@@ -48,7 +48,7 @@ h1, h2, h3, h4, h5, h6 {
 /* Containers */
 
 .container-fluid{
-  padding: 15% 18%;
+  padding: 12% 18%;
   max-width: 1920px;
 }
 
@@ -223,6 +223,11 @@ td:last-child {
 
 /* Footer */
 
+#foot .container-fluid {
+  padding: 2% 18%;
+  max-width: 1920px;
+}
+
 .explain {
   font-size: 1rem;
   text-align: left;
@@ -232,6 +237,18 @@ td:last-child {
 footer {
   font-size: 1rem;
 }
+
+/* Animation */
+
+.fade-in {
+  opacity: 0;
+  transition: opacity 250ms ease-in;
+}
+
+.fade-in.appear {
+  opacity: 1;
+}
+
 
 @media (min-width: 1400px) {
   /* body {
