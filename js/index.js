@@ -79,7 +79,9 @@ $(document).ready(function () {
 // Color Change
 $(window).scroll(function () {
     var $window = $(window),
-        $body = $('body'),
+        $body1 = $('#team'),
+        $body2 = $('#register'),
+        $body3 = $('#schedule'),
         $panel = $('.panel');
 
     var scroll = $window.scrollTop() + ($window.height() / 2);
@@ -87,12 +89,22 @@ $(window).scroll(function () {
         var $this = $(this);
         if ($this.position().top <= scroll &&
             $this.position().top + $this.height() > scroll) {
-            $body.removeClass(function (index, css) {
+            $body1.removeClass(function (index, css) {
+                return (css.match(/(^|\s)color-\S+/g) ||
+                    []).join('');
+            });
+            $body2.removeClass(function (index, css) {
+                return (css.match(/(^|\s)color-\S+/g) ||
+                    []).join('');
+            });
+            $body3.removeClass(function (index, css) {
                 return (css.match(/(^|\s)color-\S+/g) ||
                     []).join('');
             });
 
-            $body.addClass('color-' + $(this).data('color'));
+            $body1.addClass('color-' + $(this).data('color'));
+            $body2.addClass('color-' + $(this).data('color'));
+            $body3.addClass('color-' + $(this).data('color'));
         }
     }).scroll();
 });

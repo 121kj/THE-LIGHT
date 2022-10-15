@@ -7,7 +7,7 @@ body {
   background-color: #000;
   color: #fff;
   font-size: 20px;
-  transition: background-color 0.5s ease;
+  transition: background-color 2s ease;
 }
 
 .color-black {
@@ -222,7 +222,7 @@ td:last-child {
   margin: auto;
   overflow: hidden;
   position: relative;
-  width: 960px;
+  width: 100%;
 }
 .slider::before, .slider::after {
   background: linear-gradient(to right, black 0%, rgba(0, 0, 0, 0) 100%);
