@@ -138,16 +138,20 @@ body {
 
 .item-CD {
   padding: 0 10px;
+  padding-top: 25px;
+  padding-bottom: 25px;
   margin-bottom: 50px;
   background: rgba(0, 0, 0, 0.3)
 }
 
 .left-CD {
+  padding-left: 25px;
   border-top-left-radius: 17px;
   border-bottom-left-radius: 17px;
 }
 
 .right-CD {
+  padding-right: 25px;
   border-top-right-radius: 17px;
   border-bottom-right-radius: 17px;
 }
