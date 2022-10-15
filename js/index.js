@@ -101,7 +101,6 @@ $(window).scroll(function () {
                 return (css.match(/(^|\s)color-\S+/g) ||
                     []).join('');
             });
-
             $body1.addClass('color-' + $(this).data('color'));
             $body2.addClass('color-' + $(this).data('color'));
             $body3.addClass('color-' + $(this).data('color'));
@@ -112,8 +111,7 @@ $(window).scroll(function () {
 // Animation
 const faders = document.querySelectorAll('.fade-in');
 const appearOptions = {
-    threshold: 1,
-    // rootMargin: "0px 0px -30px 0px"
+    threshold: 0.5
 };
 const appearOnScroll = new IntersectionObserver(function(
     entries,

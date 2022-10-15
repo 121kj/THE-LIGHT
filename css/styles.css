@@ -7,7 +7,7 @@ body {
   background-color: #000;
   color: #fff;
   font-size: 20px;
-  transition: background-color 2s ease;
+  transition: background-color 2s ease-in-out;
 }
 
 .color-black {
@@ -325,7 +325,7 @@ footer {
 
 .fade-in {
   opacity: 0;
-  transition: opacity 250ms ease-in;
+  transition: opacity 500ms ease-in;
 }
 
 .fade-in.appear {
