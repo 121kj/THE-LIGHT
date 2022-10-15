@@ -169,9 +169,13 @@ td:last-child {
 }
 
 /* QnA Section */
-.accordion-button.collapsed {
-  color: #fff;
-  background: #1A1F27;
+
+.accordion {
+  --bs-accordion-border-color: transparent;
+  --bs-accordion-border-radius: 17px;
+  --bs-accordion-inner-border-radius: 17px;
+  --bs-accordion-btn-padding-y: 1.5rem;
+  margin-bottom: 20px;
 }
 
 .accordion-item {
@@ -179,8 +183,41 @@ td:last-child {
   background: #1A1F27
 }
 
+.accordion-button {
+  font-size: 1.3rem;
+}
+
+.accordion-button.collapsed {
+  color: #fff;
+  background: #1A1F27;
+}
+
+.accordion-button:not(.collapsed) {
+  color: #fff;
+  background-color: #1A1F27;
+}
+
 .accordion-button.collapsed::after {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+}
+
+.accordion-button:not(.collapsed)::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");;
+}
+
+.accordion-button:focus {
+  box-shadow: none;
+  border-color: rgba(0,0,0,.125);
+}
+
+.q-title {
+  color: #FF7A00;
+  padding-right: 3rem;
+}
+
+.accordion-body {
+  font-size: 1.2rem;
+  text-align: left;
 }
 
 
@@ -197,15 +234,6 @@ td:last-child {
     font-size: 4vw;
   } */
 
-  .share-div {
-    height: 600px;
-    padding: 100px;
-  }
-
-  .item-abs {
-    left: 100px;
-  }
-
   .margin-b {
     margin-bottom: 100px;
   }
@@ -214,42 +242,8 @@ td:last-child {
 
 @media (max-width: 991px) {
 
-  .two {
-    display: none;
-  }
-
-  .share-div {
-    display: none;
-  }
-
-  .item-abs {
-    display: none;
-  }
-
-  .share-div-2 {
-    text-align: center;
-    align-items: center;
-    color: #fff;
-    background-image: linear-gradient(
-        rgba(0, 0, 0, 0.5),
-        rgba(0, 0, 0, 0.5)
-      ), url("../images/share-img.png");
-  }
-
   .container-fluid{
     padding: 7% 15%;
-  }
-
-}
-
-@media (min-width: 992px) {
-
-  .one {
-    display: none;
-  }
-
-  .share-div-2 {
-    display: none;
   }
 
 }
@@ -263,10 +257,6 @@ td:last-child {
 @media (max-width: 767px) {
   .one-line {
     display: none;
-  }
-
-  .share-div-2 {
-    height: 300px;
   }
 
   .container-fluid{
