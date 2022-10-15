@@ -42,7 +42,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .heading-orange {
-  color: #FF7A00;
+  color: #54BFC8;
 }
 
 /* Containers */
@@ -70,7 +70,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .nav-link:hover {
-  color: #fff;
+  color: #54BFC8;
 }
 
 /* Title Section */
@@ -175,7 +175,7 @@ td:last-child {
 }
 
 .time {
-  color: #FF7A00
+  color: #54BFC8;
 }
 
 /* QnA Section */
@@ -221,7 +221,7 @@ td:last-child {
 }
 
 .q-title {
-  color: #FF7A00;
+  color: #54BFC8;
   padding-right: 3rem;
 }
 
