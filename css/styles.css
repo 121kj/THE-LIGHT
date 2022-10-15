@@ -1,7 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700;900&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700;900&display=swap'); */
+@font-face {
+  font-family: 'Pretendard-Regular';
+  src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
 
 body {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Pretendard-Regular';
   text-align: center;
   background-color: #000;
   color: #fff;
@@ -18,7 +25,7 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Pretendard-Regular';
   font-weight: 700;
 }
 
@@ -29,7 +36,7 @@ h1, h2, h3, h4, h5, h6 {
 /* Headings */
 
 .big-heading {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Pretendard-Regular';
   font-size: 4.5rem;
   font-weight: 700;
   line-height: 1.5;
@@ -65,7 +72,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .nav-link {
   font-size: 1rem;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Pretendard-Regular';
   font-weight: 300;
 }
 
