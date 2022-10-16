@@ -293,6 +293,7 @@ td:last-child {
 .q-title {
   color: #54BFC8;
   padding-right: 3rem;
+  
 }
 
 .q-question {
@@ -404,6 +405,6 @@ footer {
   }
 
   .body {
-    font-size: 10px;
+    font-size: 15px;
   }
 }
