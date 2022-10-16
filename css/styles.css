@@ -295,6 +295,11 @@ td:last-child {
   padding-right: 3rem;
 }
 
+.q-question {
+  color: #54BFC8;
+  padding-right: 75.65px;
+}
+
 .accordion-body {
   text-align: left;
 }
@@ -309,11 +314,22 @@ td:last-child {
 .explain {
   font-size: 1rem;
   text-align: left;
-  color: #646464;
 }
 
 footer {
   font-size: 1rem;
+}
+
+#foot {
+  color: #54BFC8;
+}
+
+#foot a:link {
+  color: #54BFC8;
+}
+
+#foot a:hover {
+  color: #fff;
 }
 
 /* Animation */
@@ -385,5 +401,9 @@ footer {
 
   .slider::before, .slider::after {
     width: 70px;
+  }
+
+  .body {
+    font-size: 10px;
   }
 }
