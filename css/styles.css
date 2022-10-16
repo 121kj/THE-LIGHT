@@ -46,7 +46,7 @@ body {
 /* Containers */
 
 .container-fluid{
-  padding: 12% 18%;
+  padding: 12% 15%;
   max-width: 1728px;
 }
 
@@ -267,10 +267,6 @@ td:last-child {
   background: #1A1F27
 }
 
-/* .accordion-button {
-  font-size: 1.3rem;
-} */
-
 .accordion-button.collapsed {
   color: #fff;
   background: #1A1F27;
@@ -300,14 +296,13 @@ td:last-child {
 }
 
 .accordion-body {
-  /* font-size: 1.2rem; */
   text-align: left;
 }
 
 /* Footer */
 
 #foot .container-fluid {
-  padding: 2% 18%;
+  padding: 2% 15%;
   max-width: 1728px;
 }
 
@@ -334,17 +329,6 @@ footer {
 
 
 @media (min-width: 1400px) {
-  /* body {
-    font-size: 1.5vw;
-  } */
-
-  /* .big-heading {
-    font-size: 5vw;
-  } */
-
-  /* .section-heading {
-    font-size: 4vw;
-  } */
 
   .margin-b {
     margin-bottom: 100px;
@@ -354,8 +338,20 @@ footer {
 
 @media (max-width: 991px) {
 
-  .container-fluid{
+  .container-fluid {
     padding: 7% 15%;
+  }
+
+  #foot .container-fluid {
+    padding: 2% 15%;
+  }
+
+  .navbar {
+    padding: 1% 15%;
+  }
+
+  .slider::before, .slider::after {
+    width: 100px;
   }
 
 }
@@ -372,10 +368,22 @@ footer {
   }
 
   .container-fluid{
-    padding: 7% 10%;
+    padding: 7% 5%;
+  }
+
+  #foot .container-fluid {
+    padding: 2% 5%;
+  }
+
+  .navbar {
+    padding: 1% 5%;
   }
 
   .section-heading {
     font-size: 2.5rem;
+  }
+
+  .slider::before, .slider::after {
+    width: 70px;
   }
 }
