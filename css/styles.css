@@ -50,6 +50,12 @@ body {
   max-width: 1728px;
 }
 
+.container-fluid-full{
+  padding: 12% 15%;
+  max-width: 1728px;
+  height: 100vh;
+}
+
 /* Navigation Bar **************************************************************** */
 .navbar-brand img{
   height: 100px;
@@ -104,6 +110,18 @@ body {
 
 #video p {
   color: #54BFC8;
+}
+
+/* About section */
+
+.about-heading {
+  font-family: 'Pretendard';
+  font-weight: 600;
+}
+
+.about-padding {
+  padding-bottom: 50px;
+  line-height: 1;
 }
 
 /* Team Section ****************************************************************** */
