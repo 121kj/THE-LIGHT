@@ -205,6 +205,24 @@ body {
 }
 
 /* Time Line Section ************************************************************* */
+
+#schedule p {
+  margin-bottom: 0;
+}
+
+.time-content {
+  text-align: left;
+  background-color: #1A1F27;
+  padding: 20px 20px;
+  border-radius: 17px;
+  margin-bottom: 25px;
+}
+
+.time-interval {
+  color: #54BFC8;
+  padding-right: 150px;
+}
+
 table {
   width: 100%;
   text-align: left;
