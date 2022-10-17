@@ -490,6 +490,14 @@ footer {
     width: 100vw;
   }
 
+  #event p {
+    padding: 0 5%;
+  }
+
+  #event .container-fluid {
+    padding: 20% 0;
+  }
+
   .full-screen {
     height: 100vh;
   }
@@ -507,7 +515,7 @@ footer {
   }
 
   .navbar {
-    padding: 0 5%;
+    padding: 0 5% 10%;
   }
 
   .section-heading {
