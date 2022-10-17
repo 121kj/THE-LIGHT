@@ -51,10 +51,13 @@ body {
 }
 
 /* Navigation Bar **************************************************************** */
+.navbar-brand img{
+  height: 100px;
+}
 
 .navbar {
-  padding: 1% 15%;
-  align-items: end;
+  padding: 0 15%;
+  align-items: center;
 }
 
 .nav-item {
@@ -395,18 +398,6 @@ footer {
 
 @media (max-width: 991px) {
 
-  .container-fluid {
-    padding: 7% 15%;
-  }
-
-  #foot .container-fluid {
-    padding: 2% 15%;
-  }
-
-  .navbar {
-    padding: 1% 15%;
-  }
-
   .slider::before, .slider::after {
     width: 100px;
   }
@@ -433,7 +424,7 @@ footer {
   }
 
   .navbar {
-    padding: 1% 5%;
+    padding: 0 5%;
   }
 
   .section-heading {
