@@ -92,6 +92,20 @@ body {
   padding: 50px 0;
 }
 
+/* Video section **************************************************************** */
+
+.v-video {
+  width: 48vw;
+  height: 27vw;
+  border-radius: 20px;
+  box-shadow: 0 0 40px #54BFC8;
+  margin-bottom: 50px;
+}
+
+#video p {
+  color: #54BFC8;
+}
+
 /* Team Section ****************************************************************** */
 
 .team-img {
@@ -229,29 +243,12 @@ td:last-child {
 }
 .slider {
   background: black;
-  box-shadow: 0 10px 20px -5px rgba(255, 255, 255, 0.125);
   height: 330px;
   overflow: hidden;
   position: relative;
   width: 100%;
 }
-.slider::before, .slider::after {
-  background: linear-gradient(to right, black 0%, rgba(0, 0, 0, 0) 100%);
-  content: "";
-  height: 330px;
-  position: absolute;
-  width: 200px;
-  z-index: 2;
-}
-.slider::after {
-  right: 0;
-  top: 0;
-  transform: rotateZ(180deg);
-}
-.slider::before {
-  left: 0;
-  top: 0;
-}
+
 .slider .slide-track {
   -webkit-animation: scroll 40s linear infinite;
           animation: scroll 40s linear infinite;
