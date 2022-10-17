@@ -150,7 +150,7 @@ body {
 }
 
 #register .btn {
-  width: 48vw;
+  width: 400px;
   padding: 17px 0;
 }
 
@@ -166,22 +166,19 @@ body {
 .text-box {
   display: inline-block;
   text-align: center;
-  width: 48vw;
+  width: 464px;
   word-break:keep-all;
 }
 
-.text-box ul {
-  padding-left: 16px;
-}
+/* countdown styles ***********************/
 
-  /* countdown styles ***********************/
 #countdown {
   display: flex;
   flex-direction: row;
   background: rgba(0, 0, 0, 0.3);
   border-radius: 17px;
-  padding: 3vw 25px;
-  width: 48vw;
+  padding: 25px;
+  width: 400px;
   margin: auto;
 }
 
@@ -194,7 +191,7 @@ body {
 }
 
 .numbers {
-  font-size: 4vw;
+  font-size: 3rem;
 }
 
 .strings {
@@ -218,37 +215,6 @@ body {
 .time-interval {
   color: #54BFC8;
   padding-right: 150px;
-}
-
-table {
-  width: 100%;
-  text-align: left;
-  border-collapse: separate;
-  border-spacing: 0 20px;
-}
-
-tr {
-  background-color: #1A1F27;
-}
-
-td {
-  padding-top:15px;
-  padding-bottom:5px;  
-}
-
-td:first-child {
-  padding-left:20px;
-  border-top-left-radius: 17px;
-  border-bottom-left-radius: 17px;
-}
-
-td:last-child {
-  border-top-right-radius: 17px;
-  border-bottom-right-radius: 17px;
-}
-
-.time {
-  color: #54BFC8;
 }
 
 /* Event Section ***************************************************************** */
@@ -461,6 +427,10 @@ footer {
     width: 100%;
   }
 
+  .text-box ul {
+    padding-left: 16px;
+  }
+
 }
 
 @media (min-width: 774px) {
@@ -472,10 +442,6 @@ footer {
 @media (max-width: 773px) {
   .big-heading {
     font-size: 3rem;
-  }
-
-  .numbers {
-    font-size: 6vw;
   }
   
   .strings {
@@ -496,10 +462,6 @@ footer {
 
   .full-screen {
     height: 100vh;
-  }
-
-  .one-line {
-    display: none;
   }
 
   .container-fluid{
