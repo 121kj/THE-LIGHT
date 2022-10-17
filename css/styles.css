@@ -166,6 +166,7 @@ body {
   display: inline-block;
   text-align: center;
   width: 493.12px;
+  word-break:keep-all;
 }
 
   /* countdown styles ***********************/
@@ -349,6 +350,11 @@ td:last-child {
 
 .accordion-body {
   text-align: left;
+  word-break: keep-all;
+}
+
+#qna p {
+  margin-bottom: 0;
 }
 
 /* Contact Section *************************************************************** */
@@ -406,6 +412,12 @@ footer {
 
 }
 
+@media (min-width: 992px) {
+  .two-line-title {
+    display: none;
+  }
+}
+
 @media (max-width: 991px) {
 
   .slider::before, .slider::after {
@@ -414,13 +426,13 @@ footer {
 
 }
 
-@media (min-width: 768px) {
+@media (min-width: 774px) {
   .two-line {
     display: none;
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 773px) {
   .numbers {
     font-size: 2.5rem;
   }
@@ -478,7 +490,15 @@ footer {
     font-size: 2.5rem;
   }
 
-  .body {
+  body {
     font-size: 15px;
   }
+
+  .accordion-button {
+    font-size: 15px;
+  }
+
+  /* .accordion-body {
+    font-size: 15px;
+  } */
 }
