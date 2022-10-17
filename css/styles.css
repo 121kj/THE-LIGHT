@@ -116,6 +116,7 @@ body {
 .about-padding {
   padding-bottom: 50px;
   line-height: 1;
+  word-break: keep-all;
 }
 
 /* Team Section ****************************************************************** */
@@ -306,6 +307,10 @@ td:last-child {
   box-shadow: 0 0 40px #54BFC8;
 }
 
+#event p {
+  word-break: keep-all;
+}
+
 .present {
   padding-top: 25px;
 }
@@ -461,7 +466,7 @@ footer {
   }
 
   .numbers {
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
   
   .strings {
@@ -515,6 +520,7 @@ footer {
 
   .accordion-button {
     font-size: 15px;
+    word-break: keep-all;
   }
 
 }
