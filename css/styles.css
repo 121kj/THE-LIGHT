@@ -65,7 +65,7 @@ body {
 }
 
 .nav-link {
-  font-size: 1rem;
+  font-size: 15px;
   font-family: 'Pretendard';
   font-weight: 300;
 }
@@ -408,6 +408,10 @@ footer {
 
   .margin-b {
     margin-bottom: 100px;
+  }
+
+  .two-line-head {
+    display: none;
   }
 
 }
