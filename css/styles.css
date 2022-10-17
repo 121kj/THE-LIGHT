@@ -6,7 +6,7 @@ body {
   text-align: center;
   background-color: #000;
   color: #fff;
-  font-size: 20px;
+  font-size: 18px;
   transition: background-color 2s ease-in-out;
 }
 
@@ -22,7 +22,7 @@ body {
   margin-bottom: 50px;
 }
 
-/* Headings */
+/* Headings ********************************************************************** */
 
 .big-heading {
   font-family: 'Pretendard';
@@ -43,14 +43,14 @@ body {
   color: #54BFC8;
 }
 
-/* Containers */
+/* Containers ******************************************************************** */
 
 .container-fluid{
   padding: 12% 15%;
   max-width: 1728px;
 }
 
-/* Navigation Bar */
+/* Navigation Bar **************************************************************** */
 
 .navbar {
   padding: 1% 15%;
@@ -71,7 +71,7 @@ body {
   color: #54BFC8;
 }
 
-/* Title Section */
+/* Title Section ***************************************************************** */
 
 #title .btn {
   width: 150px;
@@ -89,11 +89,7 @@ body {
   padding: 50px 0;
 }
 
-/* Team Section */
-
-.item-team {
-  font-size: 25px;
-}
+/* Team Section ****************************************************************** */
 
 .team-img {
   width: 99%;
@@ -117,10 +113,14 @@ body {
   margin-bottom: 25px;
 }
 
-/* Register Section */
+/* Register Section ************************************************************** */
+
+#register .margin-b {
+  margin-bottom: 25px;
+}
 
 #register .btn {
-  width: 400px;
+  width: 461.12px;
   padding: 17px 0;
 }
 
@@ -129,7 +129,17 @@ body {
   width: 400px;
 }
 
-  /* countdown styles */
+#register ul {
+  text-align: left;
+}
+
+.text-box {
+  display: inline-block;
+  text-align: center;
+  width: 493.12px;
+}
+
+  /* countdown styles ***********************/
 #countdown {
   display: flex;
   flex-direction: row;
@@ -140,7 +150,6 @@ body {
   padding: 0 10px;
   padding-top: 25px;
   padding-bottom: 25px;
-  margin-bottom: 50px;
   background: rgba(0, 0, 0, 0.3)
 }
 
@@ -164,7 +173,7 @@ body {
   font-size: 1rem;
 }
 
-/* Time Line Section */
+/* Time Line Section ************************************************************* */
 table {
   width: 100%;
   text-align: left;
@@ -196,7 +205,7 @@ td:last-child {
   color: #54BFC8;
 }
 
-/* Event */
+/* Event Section ***************************************************************** */
 
 @-webkit-keyframes scroll {
   0% {
@@ -218,8 +227,7 @@ td:last-child {
 .slider {
   background: black;
   box-shadow: 0 10px 20px -5px rgba(255, 255, 255, 0.125);
-  height: 250px;
-  margin: auto;
+  height: 330px;
   overflow: hidden;
   position: relative;
   width: 100%;
@@ -227,7 +235,7 @@ td:last-child {
 .slider::before, .slider::after {
   background: linear-gradient(to right, black 0%, rgba(0, 0, 0, 0) 100%);
   content: "";
-  height: 250px;
+  height: 330px;
   position: absolute;
   width: 200px;
   z-index: 2;
@@ -248,11 +256,29 @@ td:last-child {
   width: calc(250px * 14);
 }
 .slider .slide {
-  height: 250px;
+  height: 330px;
   width: 250px;
+  display: flex;
+  align-items: center;
 }
 
-/* QnA Section */
+#event h2 {
+  padding-bottom: 50px;
+}
+
+#event img {
+  border: 25px;
+  width: 200px;
+  height: 200px;
+  border-radius: 15px;
+  box-shadow: 0 0 40px #54BFC8;
+}
+
+.present {
+  padding-top: 25px;
+}
+
+/* QnA Section ******************************************************************* */
 
 .accordion {
   --bs-accordion-border-color: transparent;
@@ -265,6 +291,10 @@ td:last-child {
 .accordion-item {
   color: #fff;
   background: #1A1F27
+}
+
+.accordion-button {
+  font-size: 18px;
 }
 
 .accordion-button.collapsed {
@@ -293,28 +323,41 @@ td:last-child {
 .q-title {
   color: #54BFC8;
   padding-right: 3rem;
-  
+  font-family: 'Pretendard';
+  font-weight: 600;
 }
 
 .q-question {
   color: #54BFC8;
   padding-right: 75.65px;
+  font-family: 'Pretendard';
+  font-weight: 600;
 }
 
 .accordion-body {
   text-align: left;
 }
 
-/* Footer */
+/* Contact Section *************************************************************** */
+
+.contact-inst {
+  color: #54BFC8;
+}
+
+.contact-inst:hover {
+  color: #fff;
+}
+
+.contact-content {
+  padding-top: 15px;
+  padding-bottom: 20px;
+}
+
+/* Footer ************************************************************************ */
 
 #foot .container-fluid {
   padding: 2% 15%;
   max-width: 1728px;
-}
-
-.explain {
-  font-size: 1rem;
-  text-align: left;
 }
 
 footer {
@@ -322,18 +365,14 @@ footer {
 }
 
 #foot {
-  color: #54BFC8;
-}
-
-#foot a:link {
-  color: #54BFC8;
-}
-
-#foot a:hover {
   color: #fff;
 }
 
-/* Animation */
+#foot a {
+  color: #fff;
+}
+
+/* Animation ********************************************************************* */
 
 .fade-in {
   opacity: 0;
@@ -344,6 +383,7 @@ footer {
   opacity: 1;
 }
 
+/* Responsible ******************************************************************* */
 
 @media (min-width: 1400px) {
 
