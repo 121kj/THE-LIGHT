@@ -150,7 +150,7 @@ body {
 }
 
 #register .btn {
-  width: 461.12px;
+  width: 48vw;
   padding: 17px 0;
 }
 
@@ -166,39 +166,35 @@ body {
 .text-box {
   display: inline-block;
   text-align: center;
-  width: 493.12px;
+  width: 48vw;
   word-break:keep-all;
+}
+
+.text-box ul {
+  padding-left: 16px;
 }
 
   /* countdown styles ***********************/
 #countdown {
   display: flex;
   flex-direction: row;
-  justify-content: center;
-  max-width: 100%;
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 17px;
+  padding: 3vw 25px;
+  width: 48vw;
+  margin: auto;
 }
 
-.item-CD {
-  padding: 0 10px;
-  padding-top: 25px;
-  padding-bottom: 25px;
-  background: rgba(0, 0, 0, 0.3)
+.i-4 {
+  flex-grow: 16;
 }
 
-.left-CD {
-  padding-left: 25px;
-  border-top-left-radius: 17px;
-  border-bottom-left-radius: 17px;
-}
-
-.right-CD {
-  padding-right: 25px;
-  border-top-right-radius: 17px;
-  border-bottom-right-radius: 17px;
+.i-3 {
+  flex-grow: 8;
 }
 
 .numbers {
-  font-size: 3rem;
+  font-size: 4vw;
 }
 
 .strings {
@@ -452,6 +448,19 @@ footer {
     height: 50vw;
   }
 
+  #countdown {
+    width: 100%;
+  }
+
+  #register .btn {
+    width: 100%;
+    padding: 17px 0;
+  }
+
+  .text-box {
+    width: 100%;
+  }
+
 }
 
 @media (min-width: 774px) {
@@ -466,24 +475,11 @@ footer {
   }
 
   .numbers {
-    font-size: 2rem;
+    font-size: 6vw;
   }
   
   .strings {
-    font-size: 10px;
-  }
-
-  #register .btn {
-    width: 100%;
-    padding: 17px 0;
-  }
-
-  .text-box {
-    width: 100%;
-  }
-
-  .text-box ul {
-    padding-left: 16px;
+    font-size: 12px;
   }
 
   .slider {
