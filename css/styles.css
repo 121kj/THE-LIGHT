@@ -490,3 +490,13 @@ footer {
   }
 
 }
+
+@media (max-width: 409px) {
+  .title-p {
+    display: none;
+  }
+
+  #video p {
+    word-break: keep-all;
+  }
+}
