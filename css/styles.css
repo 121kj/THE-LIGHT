@@ -491,12 +491,14 @@ footer {
 
 }
 
-@media (max-width: 409px) {
-  .title-p {
+@media (min-width: 410px) {
+  .title-m {
     display: none;
   }
+}
 
-  #video p {
-    word-break: keep-all;
+@media (max-width: 409px) {
+  .title-w {
+    display: none;
   }
 }
