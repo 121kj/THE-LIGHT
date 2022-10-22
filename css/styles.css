@@ -76,18 +76,6 @@ body {
 
 /* Title Section ***************************************************************** */
 
-#title .btn {
-  width: 150px;
-  border-radius: 50px;
-  padding: 12px 0;
-  background-color: #54BFC8;
-  border-color: transparent;
-}
-
-#title .btn:hover {
-  background-color: #31E1F7;
-}
-
 .place {
   padding: 50px 0;
 }
@@ -140,7 +128,10 @@ body {
 
 .div-rel {
   position: relative;
-  margin-bottom: 25px;
+}
+
+.item-team {
+  margin-top: 25px;
 }
 
 /* Register Section ************************************************************** */
@@ -408,9 +399,38 @@ footer {
   .two-line-title {
     display: none;
   }
+
+  .with-img {
+    display: none;
+  }
 }
 
 @media (max-width: 991px) {
+  .without-img {
+    display: none;
+  }
+
+  .first-page {
+    height: 100vh;
+  }
+
+  .main-img {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 320px;
+    z-index: -1;
+  }
+   
+  .place {
+    position: absolute;
+    top: 570px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 100%;
+  }
+
   .item-team {
     margin-bottom: 75px;
   }
@@ -446,6 +466,18 @@ footer {
 }
 
 @media (max-width: 773px) {
+  #about {
+    text-align: left;
+  }
+
+  .about-heading {
+    font-size: 20px;
+  }
+
+  #video p {
+    text-align: left;
+  }
+
   #team {
     font-size: 18px;
   }
@@ -488,7 +520,7 @@ footer {
   }
 
   .navbar {
-    padding: 0 5% 10%;
+    padding: 0 5%;
   }
 
   .section-heading {
