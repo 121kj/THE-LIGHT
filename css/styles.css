@@ -466,6 +466,11 @@ footer {
 }
 
 @media (max-width: 773px) {
+  #about .container-fluid {
+    display: flex;
+    align-items: center;
+  }
+
   #about {
     text-align: left;
   }
