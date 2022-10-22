@@ -555,4 +555,9 @@ footer {
   .title-w {
     display: none;
   }
+
+  #register img {
+    height: 300px;
+    width: 300px;
+  }
 }
