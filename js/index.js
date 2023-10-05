@@ -70,7 +70,7 @@ $(document).ready(function () {
         }
         //
         $("#countdown").countdown({
-            date: "17 November 2022 19:00:00", // change date/time here - do not change the format!
+            date: "16 November 2023 19:00:00", // change date/time here - do not change the format!
             format: "on"
         });
     });
@@ -121,7 +121,8 @@ const appearOnScroll = new IntersectionObserver(function(
         if(!entry.isIntersecting) {
             return;
         } else {
-            entry.target.classList.add('appear');
+            entry.target.classList.add('appear'
+            );
             appearOnScroll.unobserve(entry.target);
         }
     });

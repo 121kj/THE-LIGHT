@@ -31,13 +31,18 @@
   font-style: normal;
 }
 
+* {
+  margin: 0;
+}
+
 body {
   font-family: 'LINESeedKR-Rg';
   text-align: center;
   background-color: #000;
   color: #fff;
-  font-size: 18px;
+  font-size: 15px;
   transition: background-color 2s ease-in-out;
+  /* user-select: none; */
 }
 
 .color-black {
@@ -60,6 +65,17 @@ body {
   padding-top: 70px;
 }
 
+.medium-heading {
+  font-family: 'LINESeedKR-Bd';
+  font-size: 70px;
+  line-height: 1.2;
+  color: #535353;
+}
+
+.medium-heading:nth-child(2) {
+  padding: 50px 0;
+}
+
 h3 {
   font-family: 'HelveticaNeueLTPro-BdEx';
   font-size: 20px;
@@ -67,14 +83,24 @@ h3 {
   padding-bottom: 15px;
 }
 
+h6 {
+  font-size: 16px;
+}
+
 .section-heading {
-  /* font-family: 'LINESeedKR-Bd'; */
-  font-size: 3rem;
-  line-height: 1.5;
+  font-family: 'LINESeedKR-Bd';
+  font-size: 50px;
+  line-height: 1.2;
+  padding-bottom: 7px;
 }
 
 .heading-blue {
   color: #54BFC8;
+}
+
+p {
+  line-height: 1.2;
+  padding-bottom: 7px;
 }
 
 /* Containers ******************************************************************** */
@@ -87,6 +113,17 @@ h3 {
 .full-screen {
   height: 100vh;
   min-height: 1024px;
+}
+
+.wrap {
+  height: 100vh;
+  min-height: 1024px;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+}
+
+section {
+  scroll-snap-align: start;
 }
 
 /* Navigation Bar **************************************************************** */
@@ -105,7 +142,6 @@ h3 {
 
 .nav-link {
   color: #fff;
-  font-size: 15px;
 }
 
 .nav-link:hover {
@@ -125,26 +161,35 @@ h3 {
   background-position: center;
 }
 
-/* Video section **************************************************************** */
+/* Question section **************************************************************** */
 
-.v-video {
-  width: 48vw;
-  height: 27vw;
-  border-radius: 20px;
-  box-shadow: 0 0 40px #54BFC8;
-  margin-bottom: 50px;
+#question1 {
+  background-color: #F1EFE5;
+  color: #000;
 }
 
-/* About section */
-
-.about-heading {
-  /* font-family: 'LINESeedKR-Bd'; */
+#question1 .container-fluid{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 
-.about-padding {
-  padding-bottom: 50px;
-  line-height: 1;
-  word-break: keep-all;
+#question2 {
+  background-color: #45EBF9;
+  color: #000;
+}
+
+#question2 .container-fluid{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#direction {
+  text-align: left;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 
 /* Team Section ****************************************************************** */
@@ -391,7 +436,7 @@ h3 {
 
 /* Footer ************************************************************************ */
 
-#foot .container-fluid {
+#foot.container-fluid {
   padding: 2% 15%;
   max-width: 1728px;
 }
@@ -400,12 +445,12 @@ footer {
   font-size: 1rem;
 }
 
-#foot {
-  color: #fff;
+#foot span{
+  color: #54BFC8;
 }
 
-#foot a {
-  color: #fff;
+#foot li {
+  color: #535353;
 }
 
 /* Animation ********************************************************************* */
