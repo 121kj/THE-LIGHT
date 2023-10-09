@@ -40,7 +40,7 @@ body {
   text-align: center;
   background-color: #000;
   color: #fff;
-  font-size: 15px;
+  font-size: 18px;
   transition: background-color 2s ease-in-out;
   /* user-select: none; */
 }
@@ -85,13 +85,14 @@ h3 {
 
 h6 {
   font-size: 16px;
+  margin-bottom: 20px;
 }
 
 .section-heading {
   font-family: 'LINESeedKR-Bd';
   font-size: 50px;
   line-height: 1.2;
-  padding-bottom: 7px;
+  padding-bottom: 37px;
 }
 
 .heading-blue {
@@ -107,7 +108,6 @@ p {
 
 .container-fluid{
   padding: 15% 15%;
-  max-width: 1728px;
 }
 
 .full-screen {
@@ -115,11 +115,15 @@ p {
   min-height: 1024px;
 }
 
-.wrap {
+.snap {
   height: 100vh;
   min-height: 1024px;
   overflow-y: scroll;
   scroll-snap-type: y mandatory;
+}
+
+.smooth {
+  scroll-snap-type: none;
 }
 
 section {
@@ -134,6 +138,7 @@ section {
 .navbar {
   padding: 0 15%;
   align-items: center;
+  font-size: 16px;
 }
 
 .nav-item {
@@ -192,6 +197,16 @@ section {
   flex-direction: column;
 }
 
+#info .big-heading {
+  padding: 0;
+}
+
+.flex-between {
+  display: flex;
+  justify-content: space-between;
+  text-align: left;
+}
+
 /* Team Section ****************************************************************** */
 
 .team-img {
@@ -231,8 +246,9 @@ section {
 }
 
 #register img {
-  height: 400px;
+  height: auto;
   width: 400px;
+  padding: 25px 0;
 }
 
 #register ul {
@@ -436,20 +452,19 @@ section {
 
 /* Footer ************************************************************************ */
 
-#foot.container-fluid {
+#foot {
   padding: 2% 15%;
-  max-width: 1728px;
 }
 
 footer {
   font-size: 1rem;
 }
 
-#foot span{
+#foot span:nth-child(1){
   color: #54BFC8;
 }
 
-#foot li {
+#foot span:nth-child(2){
   color: #535353;
 }
 
@@ -457,11 +472,28 @@ footer {
 
 .fade-in {
   opacity: 0;
-  transition: opacity 500ms ease-in;
+  transform: translateY(30%);
+  transition: all 0.7s ease-in-out;
 }
 
 .fade-in.appear {
   opacity: 1;
+  transform: translateY(0);
+}
+
+.light.appear {
+  -webkit-animation: light-up 1s linear 0.7s 1 normal forwards;
+  animation: light-up 1s linear 0.7s 1 normal forwards;
+}
+
+@-webkit-keyframes light-up {
+  from {color: #535353;}
+  to {color: #fff;}
+}
+
+@keyframes light-up {
+  from {color: #535353;}
+  to {color: #fff;}
 }
 
 /* Responsible ******************************************************************* */
@@ -472,10 +504,28 @@ footer {
     margin-bottom: 100px;
   }
 
-  .two-line-head {
+  .two-line-title1 {
     display: none;
   }
 
+}
+
+@media (max-width: 1199px) {
+  .medium-heading {
+    font-size: 60px;
+  }
+
+  .big-heading {
+    padding-top: 120px;
+  }
+
+  .full-screen {
+    min-height: 850px;
+  }
+  
+  .snap {
+    min-height: 850px;
+  }
 }
 
 @media (min-width: 992px) {
@@ -486,13 +536,19 @@ footer {
 }
 
 @media (max-width: 991px) {
-   
+
+  .big-heading {
+    font-size: 70px;
+    padding-top: 150px;
+  }
+
   .place {
-    position: absolute;
-    top: 570px;
-    left: 50%;
-    transform: translate(-50%, 0);
-    width: 100%;
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+
+  .medium-heading {
+    font-size: 50px;
   }
 
   .item-team {
@@ -530,21 +586,13 @@ footer {
 }
 
 @media (max-width: 773px) {
-  #about .container-fluid {
-    display: flex;
-    align-items: center;
-  }
 
-  #about {
-    text-align: left;
+  .full-screen {
+    min-height: 600px;
   }
-
-  .about-heading {
-    font-size: 20px;
-  }
-
-  #video p {
-    text-align: left;
+  
+  .snap {
+    min-height: 600px;
   }
 
   #team {
@@ -552,15 +600,22 @@ footer {
   }
 
   .big-heading {
+    padding-top: 0px;
     font-size: 3rem;
+  }
+
+  .place {
+    font-size: 1rem;
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+
+  .medium-heading {
+    font-size: 40px;
   }
   
   .strings {
     font-size: 12px;
-  }
-
-  .slider {
-    width: 100vw;
   }
 
   .event-p {
@@ -572,7 +627,7 @@ footer {
     font-size: 18px;
   }
 
-  #event .container-fluid {
+  #event {
     padding: 20% 0;
   }
 
@@ -580,7 +635,7 @@ footer {
     padding: 20% 5%;
   }
 
-  #foot .container-fluid {
+  #foot{
     padding: 2% 5%;
   }
 
@@ -621,7 +676,6 @@ footer {
   }
 
   #register img {
-    height: 300px;
     width: 300px;
   }
 }

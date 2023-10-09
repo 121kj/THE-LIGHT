@@ -76,19 +76,33 @@ $(document).ready(function () {
     });
 });
 
-// Color Change
-$(window).scroll(function () {
+// Color Change and snap control
+
+var $isSnap = true;
+$('.snap').scroll(function () {
     var $window = $(window),
         $body1 = $('#team'),
         $body2 = $('#register'),
         $body3 = $('#schedule'),
-        $panel = $('.panel');
+        $panel = $('.panel'),
+        $snapSwitch1 = $('#direction');
+
+    if (($window.scrollTop() >= $snapSwitch1.position().top) && ($isSnap)) {
+        $isSnap = false;
+        $('.snap').addClass('smooth');
+    }
+    if (($window.scrollTop() < $snapSwitch1.position().top) && (!($isSnap))) {
+        $isSnap = true;
+        $('.snap').removeClass('smooth');
+        $('question2').scrollIntoView(true);
+    }
 
     var scroll = $window.scrollTop() + ($window.height() / 2);
     $panel.each(function () {
         var $this = $(this);
         if ($this.position().top <= scroll &&
             $this.position().top + $this.height() > scroll) {
+                console.log('in');
             $body1.removeClass(function (index, css) {
                 return (css.match(/(^|\s)color-\S+/g) ||
                     []).join('');
@@ -105,20 +119,21 @@ $(window).scroll(function () {
             $body2.addClass('color-' + $(this).data('color'));
             $body3.addClass('color-' + $(this).data('color'));
         }
-    }).scroll();
+    });
 });
 
 // Animation
 const faders = document.querySelectorAll('.fade-in');
+const lights = document.querySelectorAll('.light');
 const appearOptions = {
     threshold: 0.5
 };
-const appearOnScroll = new IntersectionObserver(function(
+const appearOnScroll = new IntersectionObserver(function (
     entries,
     appearOnScroll
 ) {
     entries.forEach(entry => {
-        if(!entry.isIntersecting) {
+        if (!entry.isIntersecting) {
             return;
         } else {
             entry.target.classList.add('appear'
@@ -130,4 +145,7 @@ const appearOnScroll = new IntersectionObserver(function(
 
 faders.forEach(fader => {
     appearOnScroll.observe(fader);
+});
+lights.forEach(light => {
+    appearOnScroll.observe(light);
 });
