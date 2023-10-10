@@ -264,7 +264,8 @@ section {
 #register img {
   height: auto;
   width: 400px;
-  padding: 25px 0;
+  border-radius: 17px;
+  margin: 25px 0;
 }
 
 #register ul {
