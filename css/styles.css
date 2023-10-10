@@ -163,7 +163,7 @@ section {
 
 .place {
   position: absolute;
-  top: 60%;
+  top: 68%;
   left: 50%;
   transform: translate(-50%, -10%);
   width: 100%;
@@ -171,7 +171,7 @@ section {
 
 .date {
   position: absolute;
-  top: 80%;
+  top: 72%;
   left: 50%;
   transform: translate(-50%, -10%);
   width: 100%;
@@ -544,6 +544,14 @@ footer {
 }
 
 @media (max-width: 991px) {
+
+  .place {
+    top: 60%;
+  }
+  
+  .date {
+    top: 80%;
+  }
 
   .big-heading {
     font-size: 70px;
