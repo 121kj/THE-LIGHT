@@ -42,7 +42,7 @@ body {
   color: #fff;
   font-size: 18px;
   transition: background-color 2s ease-in-out;
-  /* user-select: none; */
+  user-select: none;
 }
 
 .color-black {
@@ -62,7 +62,6 @@ body {
 .big-heading {
   font-family: 'HelveticaNeueLTPro-HvEx';
   font-size: 100px;
-  padding-top: 70px;
 }
 
 .medium-heading {
@@ -79,8 +78,6 @@ body {
 h3 {
   font-family: 'HelveticaNeueLTPro-BdEx';
   font-size: 20px;
-  margin-bottom: 0;
-  padding-bottom: 15px;
 }
 
 h6 {
@@ -111,6 +108,7 @@ p {
 }
 
 .full-screen {
+  position: relative;
   height: 100vh;
   min-height: 1024px;
 }
@@ -155,8 +153,28 @@ section {
 
 /* Title Section ***************************************************************** */
 
+#title .big-heading {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -10%);
+  width: 100%;
+}
+
 .place {
-  padding-top: 170px;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -10%);
+  width: 100%;
+}
+
+.date {
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -10%);
+  width: 100%;
 }
 
 .main {
@@ -195,10 +213,6 @@ section {
   display: flex;
   justify-content: center;
   flex-direction: column;
-}
-
-#info .big-heading {
-  padding: 0;
 }
 
 .flex-between {
@@ -415,13 +429,11 @@ section {
 .q-title {
   color: #54BFC8;
   padding-right: 3rem;
-  /* font-family: 'LINESeedKR-Bd'; */
 }
 
 .q-question {
   color: #54BFC8;
   padding-right: 75.65px;
-  /* font-family: 'LINESeedKR-Bd'; */
 }
 
 .accordion-body {
@@ -515,10 +527,6 @@ footer {
     font-size: 60px;
   }
 
-  .big-heading {
-    padding-top: 120px;
-  }
-
   .full-screen {
     min-height: 850px;
   }
@@ -539,12 +547,6 @@ footer {
 
   .big-heading {
     font-size: 70px;
-    padding-top: 150px;
-  }
-
-  .place {
-    padding-top: 120px;
-    padding-bottom: 120px;
   }
 
   .medium-heading {
@@ -599,19 +601,20 @@ footer {
     font-size: 18px;
   }
 
+  #info p {
+    font-size: 1rem;
+  }
+
   .big-heading {
-    padding-top: 0px;
     font-size: 3rem;
   }
 
   .place {
-    font-size: 1rem;
-    padding-top: 70px;
-    padding-bottom: 70px;
+    font-size: 15px;
   }
 
   .medium-heading {
-    font-size: 40px;
+    font-size: 2rem;
   }
   
   .strings {
@@ -644,7 +647,7 @@ footer {
   }
 
   .section-heading {
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
 
   body {
@@ -662,6 +665,10 @@ footer {
     word-break: keep-all;
   }
 
+  #register img {
+    width: 300px;
+  }
+
 }
 
 @media (min-width: 410px) {
@@ -675,7 +682,7 @@ footer {
     display: none;
   }
 
-  #register img {
-    width: 300px;
+  #info p {
+    font-size: 13px;
   }
 }
