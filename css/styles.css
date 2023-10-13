@@ -112,12 +112,12 @@ p {
 .full-screen {
   position: relative;
   height: 100vh;
-  min-height: 1024px;
+  min-height: 800px;
 }
 
 .snap {
   height: 100vh;
-  min-height: 1024px;
+  min-height: 800px;
   overflow-y: scroll;
   scroll-snap-type: y mandatory;
 }
@@ -475,12 +475,17 @@ footer {
   font-size: 1rem;
 }
 
-#foot span:nth-child(1){
+#foot span {
   color: #54BFC8;
 }
 
-#foot span:nth-child(2){
+#foot a {
+  text-decoration: none;
   color: #535353;
+}
+
+#foot a:hover {
+  color: #54BFC8;
 }
 
 /* Animation ********************************************************************* */
@@ -531,11 +536,11 @@ footer {
   }
 
   .full-screen {
-    min-height: 850px;
+    min-height: 600px;
   }
   
   .snap {
-    min-height: 850px;
+    min-height: 600px;
   }
 }
 
