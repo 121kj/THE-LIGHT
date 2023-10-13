@@ -99,7 +99,7 @@ h6 {
 }
 
 p {
-  line-height: 1.2;
+  line-height: 1.5;
   padding-bottom: 7px;
 }
 
@@ -367,6 +367,7 @@ section {
 }
 
 #event h2 {
+  font-family: 'LINESeedKR-Bd';
   padding-bottom: 50px;
 }
 
